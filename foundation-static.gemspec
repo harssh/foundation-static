@@ -7,16 +7,17 @@ require "foundation-static/version"
 Gem::Specification.new do |s|
   s.name        = "foundation-static"
   s.version     = FoundationStatic::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of FoundationStatic."
-  s.description = "TODO: Description of FoundationStatic."
+  s.authors     = ["Harssh S Shrivastava"]
+  s.email       = ["harssh122@gmail.com"]
+  s.homepage    = "none"
+  s.summary     = "Converts foundation to static"
+  s.description = "Converts foundation to static"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.14"
-
+  s.add_dependency "sass", [">= 3.2.0"]
+  s.add_dependency "zurb-foundation", ["~>4.3.2"]
   s.add_development_dependency "sqlite3"
 end
