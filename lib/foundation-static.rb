@@ -1,0 +1,2 @@
+module FoundationStatic
+end
