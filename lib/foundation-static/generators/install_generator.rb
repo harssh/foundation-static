@@ -31,7 +31,7 @@ module FoundationStatic
 
       def add_to_assets
          variable_source = File.join(File.dirname(__FILE__),"templates","custom_variable.scss")
-         insert_into_file "app/assets/stylesheets/foundation_and_overrides.scss",File.read(variable_source), :after => "@import 'foundation';\n"
+         insert_into_file "app/assets/stylesheets/foundation_and_overrides.scss",File.read(variable_source), :before => "@import 'foundation';\n"
       end
 
       
