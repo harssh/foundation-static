@@ -1,0 +1,8 @@
+Description:
+    Setup Foundation Static app to use Foundation Static
+
+Example:
+  rails g foundation_static:install
+
+  This will insert foundation require lines into default application assets:
+   
